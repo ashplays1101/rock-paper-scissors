@@ -1,0 +1,1 @@
+This application is a simple game of Rock Paper Scissors coded in Javascript
