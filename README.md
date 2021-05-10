@@ -1,1 +1,1 @@
-This application is a simple game of Rock Paper Scissors coded in Javascript
+This application is a simple game of Rock Paper Scissors coded in Javascript that can be played through the browser's console.
