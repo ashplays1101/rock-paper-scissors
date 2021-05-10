@@ -1,16 +1,22 @@
+//Declaring variables for the player's score, computer's score, and the win status.
 let playerScore = -0;
 let computerScore = 0;
 let winStatus = null;
 
+//Pick a random option from Rock, Paper, and Scissors. This is counted as the computer's turn.
 function computerPlay() {
     let words = ["ROCK", "PAPER", "SCISSORS"];
     return words[Math.floor(Math.random()*words.length)];
 }
+
+//The function that represents one round of the game.
 function playRound() {
     let ps = prompt("Type in your choice(Rock, Paper, Scissors)");
+    //Both selections are turned into upper case to make it case insensitive.
     let playerSelection = ps.toUpperCase();
     let computerSelection = computerPlay();
 
+    //Switch case to determine if the player wins, loses, or if it's a draw.
     switch (computerSelection + "-" + playerSelection) {
         case "ROCK-ROCK":
             winStatus = "draw";
@@ -53,10 +59,13 @@ function playRound() {
         }
     }
 
+//This function calls the previous function 5 times, which counts as a single game.
 function game() {
+    //Initialize scores before each game
     playerScore = 0;
     computerScore = 0;
 
+    //For loop that calls the playRound function 5 times. Also checks winStatus and increments playerScore or computerScore accordingly.
     for (var i = 0; i <= 4; i++) {
         console.log(playRound());
         if (winStatus === "win") {
@@ -70,6 +79,7 @@ function game() {
         }
     }
 
+    //If statement chain to determine who won the game and to display the score.
     if (playerScore > computerScore) {
         return ("You won! Your score - " + playerScore + ". Computer's score - " + computerScore);
     }
@@ -84,5 +94,6 @@ function game() {
     }
 }
 
+//Call the game function and display its output on the console.
 console.log(game());
 
