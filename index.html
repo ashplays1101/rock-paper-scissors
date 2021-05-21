@@ -1,11 +1,29 @@
-<!-- This is an empty HTML file. The game is played solely using the console-->
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Rock Paper Scissors</title>
-    </head>
-    <script type="text/javascript" src="script.js"></script>
-    <body>
-        
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="rps">
+        <button class="btn" id="rock" onclick="rock()">Rock</button>
+        <button class="btn" id="paper" onclick="paper()">Paper</button>
+        <button class="btn" id="scissors" onclick="scissors()">Scissors</button>
+        <br>
+        <button id="clear" onclick= "clearText()">Reset</button>
+    </div>
+        <h3 id = "score">Player: <span id="player">0</span></h3>
+        <h3 id = "score">Computer: <span id="computer">0</span></h3>
+    
+    <div id="info">
+        <p></p>
+    </div>
+</body>
+<script src="script.js"></script>
 </html>

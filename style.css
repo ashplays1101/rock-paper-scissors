@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #D7B377;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #2B4162;
+    font-size: 70px;
+    margin: 30px 0 70px 0;
+    font-family: 'Chela One', cursive;
+}
+
+.rps {
+    background-color: white;
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 10px 5px 50px black;
+
+}
+
+#score {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.btn {
+    width: 200px;
+    height: 120px;
+    margin: 100px 30px;
+    background-color: #2CA58D;
+    border-radius: 40px;
+    font-size: 30px;
+    font-family: monospace;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-weight: bolder;
+    border: solid #217a69 3px;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 5px black inset;
+}
+
+.btn:active {
+    background-color: #1e6e5e;
+    transform: translateY(4px);
+}
+
+#clear {
+    width: 80px;
+    height: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#clear:hover {
+    background-color: rgb(46, 46, 46);
+}
+
+#clear:active {
+    transform: translateY(1px);
+}
+
+#info {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+}
+
